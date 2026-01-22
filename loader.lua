@@ -1,11 +1,4 @@
-local url = "https://raw.githubusercontent.com/damitryingcode/jacobmadethis/refs/heads/main/main.lua"
+local url = "https://pastebin.com/raw/fRbD2Gf7"
 
-local success, result = pcall(function()
-    return game:HttpGet(url)
-end)
-
-if success and result then
-    loadstring(result)()
-else
-    warn("Failed to load script.")
-end
+local code = game:HttpGet(url)
+loadstring(code)()
